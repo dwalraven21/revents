@@ -40,56 +40,61 @@ class EventForm extends Component {
 		return (
 		          <Segment>
 		            <Form
-					onSubmit={this.handleFormSubmit}
-					autoComplete="off">
+						onSubmit={this.handleFormSubmit}
+						autoComplete="off">
 		              <Form.Field>
 		                <label>Event Title</label>
 		                <input
-						name="title"
-						onChange={this.handleInputChange}
-						value={title}
-						placeholder="Event Title"/>
+							name="title"
+							onChange={this.handleInputChange}
+							value={title}
+							placeholder="Event Title"
+						/>
 		              </Form.Field>
 					  <Form.Field>
 		                <label>Event Date</label>
 		                <input
-						name="date"
-						onChange={this.handleInputChange}
-						value={date}
-						type="date"
-						placeholder="Event Date" />
+							name="date"
+							onChange={this.handleInputChange}
+							value={date}
+							type="date"
+							placeholder="Event Date"
+						/>
 		              </Form.Field>
 		              <Form.Field>
 						<label>City</label>
 						<input
-						name="city"
-						onChange={this.handleInputChange}
-						value={city}
-						placeholder="City" />
+							name="city"
+							onChange={this.handleInputChange}
+							value={city}
+							placeholder="City"
+						/>
 		              </Form.Field>
 					  <Form.Field>
 						<label>Venue</label>
 						<input
-						name="venue"
-						onChange={this.handleInputChange}
-						value={venue}
-						placeholder="Venue Name" />
+							name="venue"
+							onChange={this.handleInputChange}
+							value={venue}
+							placeholder="Venue Name"
+						/>
 		              </Form.Field>
 					  <Form.Field>
 						<label>Hosted By</label>
 						<input
-						name="hostedBy"
-						onChange={this.handleInputChange}
-						value={hostedBy}
-						placeholder="Who is hosting the event" />
+							name="hostedBy"
+							onChange={this.handleInputChange}
+							value={hostedBy}
+							placeholder="Who is hosting the event"
+						/>
 		              </Form.Field>
 		              <Button positive type="submit">
 		                Submit
 		              </Button>
 		              <Button
-					  onClick={cancelFormOpen}
-					  type="button">
-		                Cancel
+						  onClick={cancelFormOpen}
+						  type="button">
+			              Cancel
 		              </Button>
 
 		            </Form>
