@@ -9,7 +9,7 @@ class NavBar extends Component {
 				<Container>
 		        <Menu.Item
 				as={NavLink}
-				to='/'
+				exact to='/'
 				header>
 		          <img src="assets/logo.png" alt="logo" />
 				  Re-vents
@@ -19,6 +19,11 @@ class NavBar extends Component {
 				as={NavLink}
 				to="/events"
 				name="Events"/>
+
+<Menu.Item
+				as={NavLink}
+				to="/people"
+				name="People"/>
 
 		        <Menu.Item >
 		          <Button

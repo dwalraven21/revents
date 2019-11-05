@@ -21,7 +21,7 @@ class App extends Component {
 			<NavBar />
 			<Container className="main">
 				<Route
-					path="/"
+					exact path="/"
 					component={HomePage}
 				/>
 				<Route
